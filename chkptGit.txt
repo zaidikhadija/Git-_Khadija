@@ -1,0 +1,102 @@
+Microsoft Windows [version 10.0.19042.631]
+(c) 2020 Microsoft Corporation. Tous droits réservés.
+
+C:\Users\ZAIDI>mkdir learn_git_again
+
+C:\Users\ZAIDI>cd learn_git_again
+
+C:\Users\ZAIDI\learn_git_again>cd.>third.txt
+
+C:\Users\ZAIDI\learn_git_again>git init
+Initialized empty Git repository in C:/Users/ZAIDI/learn_git_again/.git/
+
+C:\Users\ZAIDI\learn_git_again>git add third.txt
+
+C:\Users\ZAIDI\learn_git_again>git commit -m"adding third.txt"
+[master (root-commit) 4e6c87e] adding third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+
+C:\Users\ZAIDI\learn_git_again>git log
+commit 4e6c87eee3c54da1dde25a30ffd29d6d7986d4ea (HEAD -> master)
+Author: ZAIDI <YOUR EMAIL>
+Date:   Sat Mar 20 23:02:04 2021 +0100
+
+    adding third.txt
+
+C:\Users\ZAIDI\learn_git_again>cd.>fourth.txt
+
+C:\Users\ZAIDI\learn_git_again>git add fourth.txt
+
+C:\Users\ZAIDI\learn_git_again>git commit -m"adding fourth.txt"
+[master 1e1116b] adding fourth.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+
+C:\Users\ZAIDI\learn_git_again>git rm third.txt
+rm 'third.txt'
+
+C:\Users\ZAIDI\learn_git_again>git add .
+
+C:\Users\ZAIDI\learn_git_again>git commit -m"removing third.txt"
+[master ec5c054] removing third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 third.txt
+
+C:\Users\ZAIDI\learn_git_again>git log
+commit ec5c054cbee04f96d94522309d0f893964974aa8 (HEAD -> master)
+Author: ZAIDI <YOUR EMAIL>
+Date:   Sat Mar 20 23:26:43 2021 +0100
+
+    removing third.txt
+
+commit 1e1116b029d033421816a19209800694d902c267
+Author: ZAIDI <YOUR EMAIL>
+Date:   Sat Mar 20 23:19:10 2021 +0100
+
+    adding fourth.txt
+
+commit 4e6c87eee3c54da1dde25a30ffd29d6d7986d4ea
+Author: ZAIDI <YOUR EMAIL>
+Date:   Sat Mar 20 23:02:04 2021 +0100
+
+    adding third.txt
+
+C:\Users\ZAIDI\learn_git_again>git config --global core.pager cat
+
+C:\Users\ZAIDI\learn_git_again>git congig --list
+git: 'congig' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+C:\Users\ZAIDI\learn_git_again>git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+user.name=ZAIDI
+user.email=YOUR EMAIL
+core.pager=cat
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+C:\Users\ZAIDI\learn_git_again>
